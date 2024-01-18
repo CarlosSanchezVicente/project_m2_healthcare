@@ -1,0 +1,6 @@
+id_medication,name_medication,medication_type,api
+0,Aspirin,acetylsalicylic acid,salicylates
+1,Lipitor,atorvastatin,statins
+2,Penicillin,6-aminopenicillanic acid,antibiotic
+3,Paracetamol,paracetamol,analgesic and antipyretic (NSAID)
+4,Ibuprofen,Ibuprofen,anti-inflammatory (NSAID)
