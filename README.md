@@ -10,7 +10,8 @@ The data is downloaded as a '.csv' file in a single unnormalized table.
 
 ### 🚀 Pipeline
 The high-level pipeline can be seen in the schematic below. Subsequently, the different phases carried out are described:
-<img src=/"./img/pipeline.png" alt="Pipeline" width="500" align="center">
+
+<img src="./img/pipeline.PNG" alt="Pipeline" width="1000" align="center">
 
 The data downloaded from Kaggle are imported into the script to perform different transformations and prepare them for further work:
 - Data cleaning.
@@ -26,7 +27,8 @@ The data downloaded from Kaggle are imported into the script to perform differen
 
 ### Data Model
 The star data model consists of 6 tables. The schematic is shown below:
-<img src=/"./img/data_model.png" alt="Data model" width="500" align="center">
+
+<img src="./img/data_model.PNG" alt="Data model" width="1000" align="center">
 
 ### 💻 Technology stack
 - Python==3.9.18
