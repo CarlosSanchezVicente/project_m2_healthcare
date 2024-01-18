@@ -1,6 +1,8 @@
-# project_m2_healthcare
+# Healthcare project 
+Welcome to this project designed to analyze data from the US healthcare system. The dataset used is a synthetic healthcare dataset designed to mimic real-world healthcare data. This dataset does not contain real information.
 
 ### 🎯 The project description
+The objective of this project is to obtain a dashboard with which to represent and analyze different metrics and KPIs of this dataset. In this way to study and be able to draw conclusions about this data. 
 
 ### 📑 Dataset
 Data downloaded from Kaggle: https://www.kaggle.com/datasets/prasad22/healthcare-dataset/data
@@ -8,7 +10,7 @@ The data is downloaded as a '.csv' file in a single unnormalized table.
 
 ### 🚀 Pipeline
 The high-level pipeline can be seen in the schematic below. Subsequently, the different phases carried out are described:
-<img src=/"./img/pipeline.png" alt="Pipeline" width="200" align="right">
+<img src=/"./img/pipeline.png" alt="Pipeline" width="500" align="center">
 
 The data downloaded from Kaggle are imported into the script to perform different transformations and prepare them for further work:
 - Data cleaning.
@@ -24,7 +26,7 @@ The data downloaded from Kaggle are imported into the script to perform differen
 
 ### Data Model
 The star data model consists of 6 tables. The schematic is shown below:
-<img src=/"./img/data_model.png" alt="Data model" width="200" align="right">
+<img src=/"./img/data_model.png" alt="Data model" width="500" align="center">
 
 ### 💻 Technology stack
 - Python==3.9.18
