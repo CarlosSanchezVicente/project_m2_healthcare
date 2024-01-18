@@ -28,7 +28,7 @@ The data downloaded from Kaggle are imported into the script to perform differen
 ### Data Model
 The star data model consists of 6 tables. The schematic is shown below:
 
-<img src="./img/data_model.PNG" alt="Data model" width="1000" align="center">
+<img src="./img/data_model.PNG" alt="Data model" width="800" align="center">
 
 ### 💻 Technology stack
 - Python==3.9.18
