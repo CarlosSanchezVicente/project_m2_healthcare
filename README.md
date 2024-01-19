@@ -25,9 +25,9 @@ The data downloaded from Kaggle are imported into the script to perform differen
 - An ODCB SQlite connector is used to import the created database into Power BI Desktop (http://www.ch-werner.de/sqliteodbc/sqliteodbc_w64.exe).
 - The different representations are made through this software. The dashboard is based on this mockup:
 
-<img src="./img/mockup_dashboard.PNG" alt="Mockup" width="700" align="center">
+<img src="./img/mockup_dashboard.png" alt="Mockup" width="700" align="center">
 
-### Data Model
+### 🧠 Data Model
 The star data model consists of 6 tables. The schematic is shown below:
 
 <img src="./img/data_model.PNG" alt="Data model" width="700" align="center">
