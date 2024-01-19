@@ -11,7 +11,7 @@ The data is downloaded as a '.csv' file in a single unnormalized table.
 ### 🚀 Pipeline
 The high-level pipeline can be seen in the schematic below. Subsequently, the different phases carried out are described: 
 
-<img src="./img/pipeline.PNG" alt="Pipeline" width="800" align="center">
+<img src="./img/pipeline_v2.PNG" alt="Pipeline" width="800" align="center">
 
 The data downloaded from Kaggle are imported into the script to perform different transformations and prepare them for further work:
 - Data cleaning.
