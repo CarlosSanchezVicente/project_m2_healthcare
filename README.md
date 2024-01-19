@@ -1,5 +1,5 @@
 # Healthcare project 
-Welcome to this project designed to analyze data from the US healthcare system. The dataset used is a synthetic healthcare dataset designed to mimic real-world healthcare data. This dataset does not contain real information.
+Welcome to this project designed to analyze data from the USA healthcare system. The dataset used is a synthetic healthcare dataset designed to mimic real-world healthcare data. This dataset does not contain real information.
 
 ### 🎯 The project description
 The objective of this project is to obtain a dashboard with which to represent and analyze different metrics and KPIs of this dataset. In this way to study and be able to draw conclusions about this data. 
