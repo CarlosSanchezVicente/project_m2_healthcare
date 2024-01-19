@@ -9,7 +9,7 @@ Data downloaded from Kaggle: https://www.kaggle.com/datasets/prasad22/healthcare
 The data is downloaded as a '.csv' file in a single unnormalized table. 
 
 ### 🚀 Pipeline
-The high-level pipeline can be seen in the schematic below. Subsequently, the different phases carried out are described:
+The high-level pipeline can be seen in the schematic below. Subsequently, the different phases carried out are described: 
 
 <img src="./img/pipeline.PNG" alt="Pipeline" width="800" align="center">
 
