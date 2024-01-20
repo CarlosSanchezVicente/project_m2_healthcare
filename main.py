@@ -11,7 +11,7 @@ from modules import store_tables as st
 
 # DEFINITION
 path = '../data/raw_data/healthcare_dataset.csv'
-
+path_store = '../data/normalized_data/df_patients.csv'
 
 
 # MAIN FUNCTION
@@ -33,7 +33,7 @@ def main():
     df_date = n.create_date_df(df_patients)
 
     # Store data
-    st.store_csv(df_patients, df_hospital, df_doctors, df_medication, df_provider, df_date)
+    st.store_csv(df_patients, df_hospital, df_doctors, df_medication, df_provider, df_date, path_store)
 
 
 # MAIN EXECUTION

@@ -6,12 +6,29 @@ import random
 
 # AUXILIARY FUNCTIONS
 def create_stay_columns(df):
+    """Summary: function to calculate the hospital stay.
+
+    Args:
+        df (dataframe): dataframe with the data
+
+    Returns:
+        df (dataframe): dataframe with new columns
+    """
     # Column with length of hospital stay
     df['Length Stay'] = df['Discharge Date'] - df['Date of Admission']  
     return df
 
 
 def create_id_columns(df, name):
+    """Summary: function to obtain id_column to diferent parameters. This columns will be the foreing keys to connect two tables.
+
+    Args:
+        df (dataframe): dataframe with the data
+        name (string): column name to obtain the id_column
+
+    Returns:
+        df (dataframe): dataframe transformed
+    """
     # Create a new column with the id_hospital
     # Get unique values from the column 'Hospital'.
     unique = df[name].unique()
@@ -32,6 +49,14 @@ def create_id_columns(df, name):
 
 # MAIN FUNCTIONS
 def create_new_columns(df):
+    """Summary: function to create new columns necesary to representation of the data.
+
+    Args:
+        df (dataframe): dataframe with data
+
+    Returns:
+        df (dataframe): dataframe transformed
+    """
     # Function to create stay columns
     df = create_stay_columns(df)
 
@@ -47,6 +72,14 @@ def create_new_columns(df):
 
 
 def create_patients_df(df):
+    """Summary: create patients dataframe. It will be the fact table.
+
+    Args:
+        df (dataframe): unnormalized dataframe
+
+    Returns:
+        df (dataframe): dataframe with patients data
+    """
     # Create patients dataframe
     columns_patients = ['id_patient','Name', 'Age', 'Gender', 'Blood Type', 'Medical Condition', 'Date of Admission',
                         'Discharge Date', 'Length Stay', 'Room Number', 'Admission Type', 'Test Results', 'Billing Amount',
@@ -73,6 +106,14 @@ def create_patients_df(df):
 
 
 def create_hospital_df(df):
+    """Summary: create hospital dataframe. It will be the dimensions table.
+
+    Args:
+        df (dataframe): unnormalized dataframe
+
+    Returns:
+        df (dataframe): dataframe with hospital data
+    """
     # Change the order of columns
     columns_hospital = ['id_hospital', 'Hospital']
     df_hospital = df_hospital[columns_hospital]
@@ -98,6 +139,14 @@ def create_hospital_df(df):
 
 
 def create_doctors_df(df):
+    """Summary: create doctors dataframe. It will be the dimensions table.
+
+    Args:
+        df (dataframe): unnormalized dataframe
+
+    Returns:
+        df (dataframe): dataframe with doctors data
+    """
     # Change the order of columns
     columns_doctors = ['id_doctors', 'Doctor']
     df_doctors = df_doctors[columns_doctors]
@@ -122,6 +171,14 @@ def create_doctors_df(df):
 
 
 def create_medication_df(df):
+    """Summary: create medication dataframe. It will be the dimensions table.
+
+    Args:
+        df (dataframe): unnormalized dataframe
+
+    Returns:
+        df (dataframe): dataframe with medication data
+    """
     # Change the order of columns
     columns_medication = ['id_medication', 'Medication']
     df_medication = df_medication[columns_medication]
@@ -143,6 +200,14 @@ def create_medication_df(df):
 
 
 def create_provider_df(df):
+    """Summary: create insurance providers dataframe. It will be the dimensions table.
+
+    Args:
+        df (dataframe): unnormalized dataframe
+
+    Returns:
+        df (dataframe): dataframe with insurance providers data
+    """
     # Create the order of columns
     columns_provider = ['id_provider', 'Insurance Provider']
     df_provider = df_provider[columns_provider]
@@ -155,6 +220,14 @@ def create_provider_df(df):
 
 
 def create_date_df(df_patients):
+    """Summary: create hospital date. It will be the dimensions table.
+
+    Args:
+        df (dataframe): unnormalized dataframe
+
+    Returns:
+        df (dataframe): dataframe with date data
+    """
     # First, it's necessary create a column with years only. This will be the primary key in the new table in the database
     df_patients['years'] = df_patients['date_admission'].dt.year
 
